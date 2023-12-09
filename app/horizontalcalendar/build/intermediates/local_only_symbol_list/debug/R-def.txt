@@ -1,0 +1,28 @@
+R_DEF: Internal format may change without notice
+local
+attr? colorBottomText
+attr? colorBottomTextSelected
+attr? colorMiddleText
+attr? colorMiddleTextSelected
+attr? colorTopText
+attr? colorTopTextSelected
+attr? selectedDateBackground
+attr? selectorColor
+attr? sizeBottomText
+attr? sizeMiddleText
+attr? sizeTopText
+attr? textColorNormal
+attr? textColorSelected
+drawable ic_circle_white_8dp
+drawable mic
+drawable shape
+drawable shape_droptarget
+id hc_events_recyclerView
+id hc_layoutContent
+id hc_selector
+id hc_text_bottom
+id hc_text_middle
+id hc_text_top
+layout hc_item_calendar
+string app_name
+styleable HorizontalCalendarView textColorNormal colorTopText colorMiddleText colorBottomText textColorSelected colorTopTextSelected colorMiddleTextSelected colorBottomTextSelected selectedDateBackground selectorColor sizeTopText sizeMiddleText sizeBottomText

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.Trip_list_fragment">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/inputSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/search"
+            android:hint=" Search"
+            android:imeOptions="actionDone"
+            android:backgroundTint="@color/drop_down_icon"
+            android:drawablePadding="2sp"
+            android:layout_marginStart="3.5dp"
+            android:layout_marginEnd="3.5dp"
+            android:paddingStart="10dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_filter_list_24"
+            android:scaleType="fitCenter"
+            android:padding="5dp"
+            android:id="@+id/imgFilter"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/no_data_found"
+        android:textSize="@dimen/heading18"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/nodatafound_triplist"
+        android:textColor="@android:color/holo_red_light"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refer_Trip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_triplist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

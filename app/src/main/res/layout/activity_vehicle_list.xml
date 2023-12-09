@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.VehicleListActivity"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/no_data_found"
+        android:textSize="@dimen/heading18"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/nodatafound"
+        android:textColor="@android:color/holo_red_light"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        tools:listitem="@layout/vehicle_list_item_resource"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview_vehiclelist"/>
+
+</LinearLayout>

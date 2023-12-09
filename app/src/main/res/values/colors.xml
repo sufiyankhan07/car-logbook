@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="drop_down_icon">#65a8d7</color>
+    <color name="white">#ffffff</color>
+    <color name="icon_background">#808080</color>
+    <color name="green">#7CFC00</color>
+    <color name="light_green">#709d3c</color>
+    <color name="sky_color">#ad5206</color>
+    <color name="yellow">#e8eb00</color>
+    <color name="purple">#690021</color>
+    <color name="equa">#1ABC9C</color>
+    <color name="black">#000000</color>
+    <color name="grey">#D8CACA</color>
+    <color name="dark_grey">#404040</color>
+    <color name="light_grey">#9A9696</color>
+
+</resources>

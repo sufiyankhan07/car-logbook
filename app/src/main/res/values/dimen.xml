@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="label_size">15sp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="heading25">25sp</dimen>
+    <dimen name="heading22">22sp</dimen>
+    <dimen name="heading20">20sp</dimen>
+    <dimen name="heading18">18sp</dimen>
+    <dimen name="heading14">14sp</dimen>
+    <dimen name="heading12">12sp</dimen>
+    <dimen name="heading16">16sp</dimen>
+    <dimen name="default_header_text_size">18sp</dimen>
+</resources>

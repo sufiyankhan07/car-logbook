@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context=".fragment.Expenses_detailFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_number"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/label_size"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtfuel_vehicle"
+            android:textSize="@dimen/heading14"
+            android:enabled="false"
+            android:textColor="@color/black"
+            tools:ignore="Autofill,LabelFor,TextFields" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tank_fuel"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/label_size"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtfuel_fuel"
+            android:textSize="@dimen/heading14"
+            android:textColor="@color/black"
+            tools:ignore="Autofill,LabelFor,TextFields" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/amount"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/label_size"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtfuel_amount"
+            android:textSize="@dimen/heading14"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            tools:ignore="Autofill,LabelFor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/other_expense"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/label_size"/>
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutotherexpense"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutparking"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chkparking"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblparking"
+                    android:text="@string/parking"
+                    android:textSize="@dimen/label_size"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/heading14"
+                android:textColor="@color/black"
+                android:id="@+id/txtparking"
+                android:inputType="number"
+                android:visibility="gone"
+                tools:ignore="Autofill,TextFields"
+                android:hint="@string/enter_parking"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutoil"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chkoil"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lbloil"
+                    android:text="@string/oil"
+                    android:textSize="@dimen/label_size"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/heading14"
+                android:textColor="@color/black"
+                android:id="@+id/txtoil"
+                android:inputType="number"
+                android:visibility="gone"
+                android:hint="@string/enter_oil"
+                tools:ignore="Autofill,TextFields" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutcarwash"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chkcarwash"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblcarwash"
+                    android:text="@string/carwash"
+                    android:textSize="@dimen/label_size"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/heading14"
+                android:textColor="@color/black"
+                android:id="@+id/txtcarwash"
+                android:visibility="gone"
+                android:inputType="number"
+                android:hint="@string/enter_car_wash"
+                tools:ignore="Autofill,TextFields" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutrepair"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chkrepair"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblrepair"
+                    android:text="@string/Repairs_and_maintenance"
+                    android:textSize="@dimen/label_size"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/heading14"
+                android:textColor="@color/black"
+                android:id="@+id/txtrepair"
+                android:visibility="gone"
+                android:inputType="number"
+                android:hint="@string/enter_repair"
+                tools:ignore="Autofill,TextFields" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutires"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chktires"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lbltires"
+                    android:text="@string/tires"
+                    android:textSize="@dimen/label_size"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/heading14"
+                android:textColor="@color/black"
+                android:id="@+id/txttiers"
+                android:inputType="number"
+                android:visibility="gone"
+                android:hint="@string/enter_tires"
+                tools:ignore="Autofill,TextFields" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutoll"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chktoll"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lbltoll"
+                    android:text="@string/toll"
+                    android:textSize="@dimen/label_size"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/heading14"
+                android:textColor="@color/black"
+                android:id="@+id/txttoll"
+                android:inputType="number"
+                android:visibility="gone"
+                android:hint="@string/enter_toll"
+                tools:ignore="Autofill,TextFields" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutothers"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chkothers"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lblothers"
+                    android:text="@string/others"
+                    android:textSize="@dimen/label_size"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/heading14"
+                android:textColor="@color/black"
+                android:id="@+id/txtothers"
+                android:visibility="gone"
+                android:inputType="number"
+                android:hint="@string/enter_other"
+                tools:ignore="Autofill,TextFields" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fuel_filling_date"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/label_size"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            tools:ignore="UseCompoundDrawables">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:id="@+id/txtfuel_date"
+                android:enabled="false"
+                android:layout_marginEnd="8dp"
+                android:textSize="@dimen/heading14"
+                tools:ignore="Autofill,LabelFor,TextFields" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_calendar"
+                android:id="@+id/expense_date"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/location"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/label_size"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtfuel_location"
+            android:textSize="@dimen/heading14"
+            android:textColor="@color/black"
+            tools:ignore="Autofill,LabelFor" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/type_of_expense"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/label_size"/>
+
+        <RadioGroup
+            android:id="@+id/groupradio"
+            android:layout_marginStart="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- In RadioGroup create the 1 Radio Button-->
+            <!-- like this we will add some more Radio Button-->
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdfuel_business"
+                android:checked="true"
+                android:text="@string/business"
+                android:textSize="@dimen/heading14"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdfuel_personal"
+                android:layout_marginTop="5dp"
+                android:text="@string/personal"
+                android:textSize="@dimen/heading14"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/comment"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-3dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/label_size" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <EditText
+                android:id="@+id/editfuel_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_border"
+                android:gravity="top|left"
+                android:hint="Enter Comment"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:scrollHorizontally="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/heading14" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="end">
+
+                <ImageView
+                    android:id="@+id/eidtfl_mic"
+                    android:layout_width="22dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/baseline_mic_24" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <Button
+                android:id="@+id/btnupdate"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:textSize="@dimen/heading16"
+                android:layout_weight="0.5"
+                android:background="@drawable/button_border"
+                android:layout_margin="10dp"
+                android:text="@string/update"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/btncancel"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:textSize="@dimen/heading16"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_border"
+                android:layout_marginStart="15dp"
+                android:text="@string/cancel"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

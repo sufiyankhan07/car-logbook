@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Horizontal Calendar</string>
+    <declare-styleable name="HorizontalCalendarView">
+        <!-- Default text color for all texts -->
+        <attr format="color" name="textColorNormal"/>
+        <!-- Default top text color -->
+        <attr format="color" name="colorTopText"/>
+        <!-- Default Middle text color -->
+        <attr format="color" name="colorMiddleText"/>
+        <!-- Default Bottom text color -->
+        <attr format="color" name="colorBottomText"/>
+
+        <!-- Selected item's text color for all texts -->
+        <attr format="color" name="textColorSelected"/>
+        <!-- Selected item's top text color -->
+        <attr format="color" name="colorTopTextSelected"/>
+        <!-- Selected item's Middle text color -->
+        <attr format="color" name="colorMiddleTextSelected"/>
+        <!-- Selected item's Bottom text color -->
+        <attr format="color" name="colorBottomTextSelected"/>
+        <!-- Selected item's background drawable -->
+        <attr format="reference" name="selectedDateBackground"/>
+
+        <!-- Background color for selector bar. -->
+        <attr format="color" name="selectorColor"/>
+
+        <!-- Top text size -->
+        <attr format="dimension" name="sizeTopText"/>
+        <!-- Middle text size -->
+        <attr format="dimension" name="sizeMiddleText"/>
+        <!-- Bottom text size -->
+        <attr format="dimension" name="sizeBottomText"/>
+
+    </declare-styleable>
+</resources>
